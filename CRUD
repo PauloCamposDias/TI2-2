@@ -1,0 +1,27 @@
+package desafio1;
+
+import java.util.Scanner;
+
+public class Crud 
+{
+    int id;
+    static Scanner Leitor = new Scanner(System.in);
+    public int create(String objeto)
+    {
+        return Leitor.nextInt();
+    }
+    public String read(int id)
+    {
+        return Leitor.nextLine();
+    }
+    public Boolean update(String objeto)
+    {
+        if(Leitor.nextLine()!=null){return true;}
+        else {return false;}
+    }
+    public Boolean delete(int id)
+    {
+        if(id!=0){return true;}
+        else {return false;}
+    }
+}
